@@ -1,0 +1,49 @@
+<html> 
+  <head> 
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function{
+      $("#includedContent").load("b.html"); 
+    });
+
+
+    (function($) {
+      
+	  $(document).ready(function() {
+	 
+		// Load external contents
+		$("[nodePage]").each(function() {
+		  el = $(this);
+		  var src = $(this).attr("nodePage") + ".html";
+		  el.load(src);
+		});
+	 
+	  });
+	})(jQuery);
+
+
+    </script> 
+  </head> 
+
+  <body> 
+     <div id="includedContent"></div>
+
+     <div id="nodePage"></div>
+
+
+    <!--[if IE]>
+    <object classid="clazz" data="nodePage2.html">
+	<p>Page content</p>
+	</object>
+	<![endif]-->
+
+	<!--[if !IE]> <-->
+	<object type="text/html" data="nodePage2.html">
+	<p>Rest of my page content</p>
+	</object>
+	<!--> <![endif]-->
+
+
+
+  </body> 
+</html>
