@@ -6,7 +6,6 @@
       $("#includedContent").load("b.html"); 
     });
 
-
     (function($) {
       
 	  $(document).ready(function() {
@@ -21,7 +20,6 @@
 	  });
 	})(jQuery);
 
-
     </script> 
   </head> 
 
@@ -29,7 +27,6 @@
      <div id="includedContent"></div>
 
      <div id="nodePage"></div>
-
 
     <!--[if IE]>
     <object classid="clazz" data="nodePage2.html">
@@ -42,8 +39,6 @@
 	<p>Rest of my page content</p>
 	</object>
 	<!--> <![endif]-->
-
-
 
   </body> 
 </html>
